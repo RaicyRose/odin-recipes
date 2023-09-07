@@ -1,17 +1,38 @@
 body {
-    width: 500px;
+    display: flex;
+    justify-content: center;
+    background-color: aquamarine;
     font-family: 'Times New Roman', Times, serif;
 }
 
-h1 {
+div {
+    background-color: azure;
+    padding: 20px;
+    justify-content: center;
+    border: 4px solid #396bbd;
+    border-radius: 5px;
+    max-width: 50%;
+    box-sizing: border-box;
+}
+
+h1,
+h2 {
     text-align: center;
 }
 
-.Ingredients, .Steps {
- text-align: left;
+ul,
+.ol {
+    text-align: left;
 }
 
 img {
-    height: 60vh;
+    max-height: 60vh;
+    max-width: 100%;
     width: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+form {
+    text-align: center;
 }
