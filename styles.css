@@ -94,4 +94,10 @@ button {
     font-size: 16px;
     border: 0.15em solid #7d3c71;
     border-radius: 12px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: white;
 }
