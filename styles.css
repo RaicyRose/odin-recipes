@@ -20,6 +20,11 @@ body {
     box-sizing: border-box;
 }
 
+.listIndexIcon {
+    width: 20px;
+    height: 20px;
+}
+
 #indexBox {
     min-width: 30%;
     max-width: 40%;
@@ -30,6 +35,10 @@ h2 {
     text-align: center;
 }
 
+h2 {
+    border-bottom: 2px solid #7d3c71;
+}
+
 h4 {
     text-align: center;
 }
@@ -37,7 +46,11 @@ h4 {
 #indexList {
     text-align: center;
     justify-content: center;
+}
 
+#indexList ul {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
 }
 
 #indexList ul li {
@@ -83,6 +96,7 @@ img {
     display: block;
     margin: 0 auto;
     mix-blend-mode: multiply;
+    border-radius: 10px;
 }
 
 form {
@@ -93,9 +107,10 @@ button {
     background-color: #d1a7c9;
     font-size: 16px;
     border: 0.15em solid #7d3c71;
-    border-radius: 12px;
+    border-radius: 1em;
     transition-duration: 0.4s;
     cursor: pointer;
+    padding: 0.5em 1em;
 }
 
 button:hover {
