@@ -57,6 +57,28 @@ h4 {
     list-style-type: none;
 }
 
+a {
+    text-decoration: none;
+    position: relative;
+    color: #7d3c71;
+}
+
+a:after {
+    background-color: #7d3c71;
+    content: '';
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -1px;
+    transition: 0.3s ease-in-out;
+}
+
+a:hover:after {
+    width: 100%;
+}
+
 ul,
 ol {
     text-align: justify;
