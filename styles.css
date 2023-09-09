@@ -8,6 +8,7 @@ body {
 }
 
 .outerBox {
+    justify-content: center;
     background-color: azure;
     margin: 20px;
     padding: 20px;
@@ -54,6 +55,23 @@ ol {
     margin-bottom: 10px;
 }
 
+.details {
+    padding: 0.75em 1em;
+    width: 50%;
+    height: 1em;
+    margin: 1em auto 2em auto;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    border: 0.25em solid #7d3c71;
+    border-radius: 2em;
+}
+
+.details li {
+    display: inline;
+    align-items: center;
+}
+
 ul {
     list-style-type: square;
 }
@@ -69,4 +87,11 @@ img {
 
 form {
     text-align: center;
+}
+
+button {
+    background-color: #d1a7c9;
+    font-size: 16px;
+    border: 0.15em solid #7d3c71;
+    border-radius: 12px;
 }
