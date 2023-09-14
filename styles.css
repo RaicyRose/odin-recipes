@@ -12,11 +12,8 @@ body {
     background-color: azure;
     margin: 20px;
     padding: 20px;
-    justify-content: center;
     border: 10px double #7d3c71;
     border-radius: 5px;
-    min-width: 50%;
-    max-width: 50%;
     box-sizing: border-box;
 }
 
@@ -137,4 +134,43 @@ button {
 
 button:hover {
     background-color: white;
+}
+
+@media (max-width: 600px) {
+
+    #indexBox {
+        min-width: 80%;
+        max-width: 80%;
+    }
+
+    .outerBox {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    #indexList ul {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #indexList ul li {
+        text-align: center;
+    }
+
+
+    .listIndexIcon {
+        display: none;
+    }
+
+    img {
+        max-height: 60vh;
+        max-width: 100%;
+        margin: 0 20px;
+    }
+
+    button {
+        margin-bottom: 10px;
+    }
+
 }
